@@ -1,0 +1,96 @@
+{
+ "n": {
+  "train": 4387,
+  "validation": 940,
+  "test": 941
+ },
+ "label_share": {
+  "1": 0.553,
+  "0": 0.35,
+  "-1": 0.097
+ },
+ "nli_seconds_per_1000": 175.5,
+ "history": [
+  {
+   "epoch": 1,
+   "train_loss": 0.7343,
+   "val_f1": 0.7226
+  },
+  {
+   "epoch": 2,
+   "train_loss": 0.4837,
+   "val_f1": 0.721
+  }
+ ],
+ "best_epoch": 1,
+ "trained_on": 3000,
+ "train_minutes": 14.1,
+ "student_seconds_per_1000": 50.7,
+ "models": {
+  "Toujours « neutre »": {
+   "macro_f1": 0.173,
+   "accuracy": 0.35,
+   "ci95": [
+    0.161,
+    0.184
+   ]
+  },
+  "DistilCamemBERT zero-shot (NLI)": {
+   "macro_f1": 0.453,
+   "accuracy": 0.603,
+   "ci95": [
+    0.422,
+    0.481
+   ]
+  },
+  "DistilCamemBERT avis (étoiles)": {
+   "macro_f1": 0.364,
+   "accuracy": 0.549,
+   "ci95": [
+    0.328,
+    0.399
+   ]
+  },
+  "DistilCamemBERT ajusté (notre élève)": {
+   "macro_f1": 0.761,
+   "accuracy": 0.792,
+   "ci95": [
+    0.725,
+    0.793
+   ]
+  }
+ },
+ "mcnemar_student_vs_nli": {
+  "only_first_right": 239,
+  "only_second_right": 61,
+  "p": 4.6721874362378984e-26
+ },
+ "confusion_student": [
+  [
+   79,
+   7,
+   6
+  ],
+  [
+   28,
+   216,
+   85
+  ],
+  [
+   22,
+   48,
+   450
+  ]
+ ],
+ "second_opinion_test": {
+  "n": 110,
+  "f1_student_vs_gemini": 0.744,
+  "f1_teacher_vs_gemini": 0.886
+ },
+ "second_opinion": {
+  "n": 780,
+  "kappa_teacher_gemini": 0.76,
+  "agreement_teacher_gemini": 0.859,
+  "f1_student_vs_gemini": 0.738
+ }
+}

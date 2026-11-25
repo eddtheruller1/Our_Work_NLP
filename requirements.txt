@@ -1,0 +1,13 @@
+pandas==2.2.3
+numpy==2.2.3
+statsmodels==0.14.4
+scipy==1.15.1
+scikit-learn==1.9.1
+matplotlib==3.10.1
+requests==2.32.3
+# Only for labelling (label.py) and the FinBERT comparison (translation):
+google-genai==1.72.0
+# Only for training and scoring (train.py, compare_models.py). CPU build is enough:
+#   pip install torch==2.15.0 --index-url https://download.pytorch.org/whl/cpu
+transformers==4.46.3
+sentencepiece==0.2.3

@@ -1,0 +1,32 @@
+{
+ "FinBERT (titres français)": {
+  "macro_f1": 0.196,
+  "accuracy": 0.357,
+  "ci95": [
+   0.18,
+   0.212
+  ]
+ },
+ "FinBERT (titres traduits en anglais)": {
+  "macro_f1": 0.617,
+  "accuracy": 0.621,
+  "ci95": [
+   0.579,
+   0.657
+  ]
+ },
+ "DistilCamemBERT ajusté (notre élève)": {
+  "macro_f1": 0.761,
+  "accuracy": 0.792,
+  "ci95": [
+   0.725,
+   0.793
+  ]
+ },
+ "mcnemar_student_vs_finbert_en": {
+  "only_first_right": 261,
+  "only_second_right": 100,
+  "p": 1.0559787263256028e-17
+ },
+ "n_test": 941
+}
